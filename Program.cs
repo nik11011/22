@@ -1,20 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
 
-namespace УП_Практ_1
-{
-    class Program
+    namespace УП_Практ_1
     {
-        static void Main(string[] args)
+        class Program
         {
-            string _name = Console.ReadLine();
-            int _idCheck = Convert.ToInt32(Console.ReadLine());
-            double sum = Convert.ToDouble(Console.ReadLine());
-            Check ch = new Check(_name, _idCheck, sum);
-            Console.WriteLine($"    {ch.name}     {ch.idCheck}     {ch.sum}");
+            static void Main(string[] args)
+            {
+                Console.Write("Введите имя чека:");
+                string _name = Console.ReadLine();
+                Console.Write("Введите id чека:");
+                int _idCheck = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Введите сумму чека:");
+                double sum = Convert.ToDouble(Console.ReadLine());
+                Check ch = new Check(_name, _idCheck, sum);
+                Console.WriteLine($"    {ch.name}     {ch.idCheck}     {ch.sum}");
+            }
         }
     }
-}
