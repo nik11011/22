@@ -6,7 +6,6 @@
         public int idCheck { get; set; }
         public double sum { get; set; }
 
-        public Check() { }
         public Check(string  _name, int _idCheck, double _sum)
         {
             name = _name;
