@@ -18,6 +18,7 @@
                 double sum = Convert.ToDouble(Console.ReadLine());
                 Check ch = new Check(_name, _idCheck, sum);
                 Console.WriteLine($"    {ch.name}     {ch.idCheck}     {ch.sum}");
+                Console.ReadKey();
             }
         }
     }
